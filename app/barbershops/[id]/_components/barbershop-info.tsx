@@ -12,10 +12,10 @@ interface BarbershopInfoProps {
 }
 
 const BarbershopInfo = ({ barbershop }: BarbershopInfoProps) => {
-  const { back } = useRouter()
+  const { replace } = useRouter()
 
   const handlerBackClick = () => {
-    back()
+    replace('/')
   }
 
   return (
